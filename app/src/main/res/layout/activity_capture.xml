@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      >
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/capture_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/capture_mask_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundredtwenty"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/black" >
+            <ImageView
+                android:id="@+id/sweep_back"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="@dimen/fifty"
+                android:layout_height="@dimen/fifty"
+                android:src="@drawable/left_arrow"
+                />
+            <CheckBox
+                android:button="@null"
+                android:id="@+id/sweep_light_button"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/fifty"
+                android:layout_height="@dimen/fifty"
+                android:background="@drawable/sweep_button_background"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/capture_crop_view"
+            android:layout_width="@dimen/twohundred"
+            android:layout_height="@dimen/twohundred"
+            android:layout_below="@id/capture_mask_top"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/activity_sweep" >
+            <ImageView
+                android:id="@+id/capture_scan_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:src="@drawable/scan_line" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/capture_mask_bottom"
+            android:paddingTop="@dimen/ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/sweep_prompt"
+            android:textColor="#ABABAB"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/capture_crop_view"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/capture_mask_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/capture_mask_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/capture_mask_top"
+            android:layout_toLeftOf="@id/capture_crop_view"
+            android:layout_toStartOf="@id/capture_crop_view"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/capture_mask_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/capture_mask_bottom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/capture_mask_top"
+            android:layout_toRightOf="@id/capture_crop_view"
+            android:layout_toEndOf="@id/capture_crop_view"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

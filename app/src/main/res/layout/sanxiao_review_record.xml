@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/record_title"
+        android:paddingLeft="20dp"
+       
+        android:textColor="#808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/review_record" />
+<TextView
+    android:id="@+id/record_title_1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+       android:visibility="gone"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/equipment_hidden" />
+	<View
+	    android:visibility="gone" 
+	     android:id="@+id/record_title_line"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:background="#dddddd"
+	    />
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/review_record_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

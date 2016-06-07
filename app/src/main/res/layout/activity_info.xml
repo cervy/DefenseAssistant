@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/EB2A29"
+        android:gravity="start|center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/info_back"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:paddingRight="@dimen/ten"
+            android:paddingEnd="@dimen/ten"
+            android:src="@drawable/left_arrow" />
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/five"
+            android:paddingEnd="@dimen/five"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"
+            />
+        <TextView
+            android:id="@+id/info_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/five"
+            android:paddingEnd="@dimen/five"
+            android:text="@string/Please_select"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"
+            android:visibility="gone"
+            />
+		<View 
+		    android:layout_marginRight="@dimen/five"
+		    android:layout_width="@dimen/one"
+		    android:background="@color/CB2525"
+		    android:layout_height="@dimen/thirty"
+		    />
+        <ImageView
+            android:id="@+id/info_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingRight="@dimen/ten"
+            android:paddingEnd="@dimen/ten"
+            android:src="@drawable/info_add"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/LinearLayout3"
+        android:orientation="vertical"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="#E6E6E6"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        <EditText
+            android:paddingLeft="@dimen/thirtysixs"
+            android:paddingStart="@dimen/thirtysixs"
+            android:id="@+id/info_edsearch"
+            style="@drawable/corner_view_pinjia"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/activity_info_search"
+            android:hint="@string/activity_search"
+            android:textColorHint="#CCCCCC"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:focusable="true"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none"
+        android:id="@+id/info_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+     </LinearLayout>
+ <ListView
+     android:background="#e0000000"
+        android:id="@+id/info_listview_2"
+        android:layout_width="match_parent"
+        android:layout_alignTop="@id/LinearLayout3"
+        android:layout_below="@id/LinearLayout3"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+         >
+    </ListView>
+       
+</RelativeLayout>

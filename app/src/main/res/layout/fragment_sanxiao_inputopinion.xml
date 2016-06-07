@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/ten">
+
+        <TextView
+            android:layout_width="@dimen/eighty"
+            android:layout_height="@dimen/thirty"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ten"
+            android:text="@string/check_person"/>
+
+        <TextView
+            android:id="@+id/tvInspector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textCursorDrawable="@drawable/edittext_color_cursor"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:src="@drawable/arrow"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/ten">
+
+        <TextView
+            android:layout_width="@dimen/eighty"
+            android:layout_height="@dimen/thirty"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ten"
+            android:text="@string/rectification_date"/>
+
+        <TextView
+            android:id="@+id/tvExpiration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/twenty"
+            android:paddingRight="@dimen/ten"
+            android:textCursorDrawable="@drawable/edittext_color_cursor"
+            android:textSize="@dimen/fourteens"/>
+
+        <ImageView
+            android:layout_width="@dimen/eight"
+            android:layout_height="@dimen/thirteen"
+            android:src="@drawable/arrow"/>
+    </TableRow>
+
+  <include layout="@layout/view"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/twenty"
+        android:text="@string/hidden_select"/>
+
+   <include layout="@layout/view"/>
+
+    <ListView
+        android:id="@+id/hidden_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <GridView
+        android:id="@+id/hidden_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="3">
+    </GridView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty"
+        android:layout_margin="@dimen/twenty"
+        android:layout_marginBottom="@dimen/five"
+        android:background="@drawable/button_bg_gold"
+        android:text="@string/save_data"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteens"/>
+
+</LinearLayout>

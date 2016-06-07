@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位名称："
+                />
+
+            <EditText
+                android:id="@+id/unitname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="使用名称："/>
+
+            <EditText
+                android:id="@+id/usename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位地址："/>
+
+            <EditText
+                android:id="@+id/addr"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="火灾危险性："/>
+
+            <EditText
+                android:id="@+id/firedangerproperties"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位类型："/>
+
+            <EditText
+                android:id="@+id/unittype"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位其它情况："/>
+
+            <EditText
+                android:id="@+id/elseprofile"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="上级单位："/>
+
+            <EditText
+                android:id="@+id/upunit"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位电话："/>
+
+            <EditText
+                android:id="@+id/unitphone"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位传真："/>
+
+            <EditText
+                android:id="@+id/fax"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位邮箱："/>
+
+            <EditText
+                android:id="@+id/email"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="营业时最大人数："/>
+
+            <EditText
+                android:id="@+id/max"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="法人代表："/>
+
+            <EditText
+                android:id="@+id/layer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="法人代表电话："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtFRDBDH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="法定代表人身份证："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtFRDBSFZ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="安全管理人："/>
+
+            <EditText
+                android:id="@+id/guanliren"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="安全管理人电话："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtAQGLRDH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="安全管理人身份证："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtAQGLRSFZ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="安全责任人："/>
+
+            <EditText
+                android:id="@+id/zerenren"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="安全责任人电话："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtAQZRRDH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="安全责任人身份证："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtAQZRRSFZ"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="专兼职消防管理人："
+                />
+
+            <EditText
+                android:id="@+id/guanlirenn"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="专兼职消防管理人电话："
+                />
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtZJZXFGLRDH"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="专兼职消防管理人身份证："
+                />
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtZJZXFGLRSFZ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="消防管辖单位："/>
+
+            <EditText
+                android:id="@+id/guanxiadanwei"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="组织机构代码："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtZZJGDM"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="邮政编码："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtYZBM"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:text="经济所有制："/>
+
+            <Spinner
+                android:id="@+id/ctl00_MainContent_dropJJSYZ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位成立时间："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtDWCLSJ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="行政区域："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_lblXZQY"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="固定资产："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtGDZC"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="职工人数："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtZGRS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="占地面积："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtZDMJ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="建筑面积："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtJZMJ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:text="燃气类型："/>
+
+            <Spinner
+                android:id="@+id/ctl00_MainContent_dropRQLX"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位专职（志愿）消防员数："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtYWXFYS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="安全出口数："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtAQCKS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="疏散楼梯数："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtSSDTS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="消防车道数："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtXFCDS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="消防电梯数："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtXFDTS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:text="消防车道位置："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtXFCDWZ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="避难层数："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtBNCS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="避难层总面积："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtBNCMJ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:text="避难层位置："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtBNCWZ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:maxLength="200"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="地理位置："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtDLWZ"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:text="自动消防设施："/>
+
+            <Spinner
+                android:id="@+id/ctl00_MainContent_rblZDXFSS"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="毗邻单位东："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtPLDWD"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="毗邻单位南："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtPLDWN"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="毗邻单位西："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtPLDWX"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="毗邻单位北："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtPLDWB"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="备注："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_txtBZ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:maxLength="200"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位属性主类："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_lblDWZSX"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_marginBottom="@dimen/ten"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:text="单位属性子类："/>
+
+            <EditText
+                android:id="@+id/ctl00_MainContent_lblDWCSX"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:textSize="@dimen/twelves"
+                />
+        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/btnSubmitt"
+            android:layout_width="@dimen/hundredforty"
+            android:layout_height="@dimen/sixty"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="@dimen/ten"
+            android:text=" 提 交 "/>
+    </LinearLayout>
+
+</ScrollView>

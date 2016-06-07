@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="@dimen/five"
+              android:tag="contact"
+    >
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/thirty"
+        android:layout_height="@dimen/thirty"
+        android:src="@drawable/user"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/five"
+        android:paddingRight="@dimen/ten">
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|bottom"
+            android:text="张三"
+            android:textSize="@dimen/sixteens"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

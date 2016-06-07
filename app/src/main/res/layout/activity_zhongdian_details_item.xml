@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twenty"
+        android:background="@color/F5F5F5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten" >
+
+        <TextView
+            android:id="@+id/details_item_name"
+            android:layout_width="@dimen/hundredtwenty"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:text="TextView"
+            android:textSize="@dimen/fourteens" />
+
+        <TextView
+            android:id="@+id/details_item_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:textSize="@dimen/fourteens" />
+
+        <View
+            android:id="@+id/details_item_line"
+            android:layout_width="@dimen/one"
+            android:layout_height="@dimen/twentyfive"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/fourteens"
+            android:background="@color/DDDDDD"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/details_item_phone"
+            android:layout_width="@dimen/twentyfive"
+            android:layout_height="@dimen/twentyfive"
+            android:layout_gravity="center"
+            android:src="@drawable/call_phone"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

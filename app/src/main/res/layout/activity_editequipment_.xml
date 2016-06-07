@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/EB2A29"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+
+            android:id="@+id/edit_equipment_back"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:paddingRight="@dimen/ten"
+            android:paddingEnd="@dimen/ten"
+            android:src="@drawable/left_arrow"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/ten"
+            android:paddingEnd="@dimen/ten"
+            android:text="@string/equipment_edit_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"
+            />
+
+        <TextView
+            android:id="@+id/edit_equipment_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sixteens"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:paddingStart="@dimen/ten"
+                android:text="@string/equipment_name"
+                />
+
+            <EditText
+                android:id="@+id/edit_equipment_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twentyfive"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginLeft="@dimen/twenty"
+
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="end"
+                android:paddingRight="@dimen/twenty"
+                android:paddingEnd="@dimen/twenty"
+                android:textColor="@color/B8B8B8"
+                android:textCursorDrawable="@drawable/edittext_color_cursor"
+                android:textSize="@dimen/fourteens"
+                />
+        </TableRow>
+
+        <include layout="@layout/view"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:paddingStart="@dimen/ten"
+                android:text="@string/equipment_number"
+                />
+
+            <EditText
+                android:id="@+id/edit_equipment_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twentyfive"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginStart="@dimen/twenty"
+
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="end"
+                android:paddingRight="@dimen/twenty"
+                android:paddingEnd="@dimen/twenty"
+                android:textColor="@color/B8B8B8"
+                android:textCursorDrawable="@drawable/edittext_color_cursor"
+                android:textSize="@dimen/fourteens"
+                />
+        </TableRow>
+
+        <include layout="@layout/view"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:paddingStart="@dimen/ten"
+                android:text="@string/equipment_location"
+                />
+
+            <EditText
+                android:id="@+id/edit_equipment_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twentyfive"
+
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="end"
+                android:paddingRight="@dimen/twenty"
+                android:paddingEnd="@dimen/twenty"
+                android:textColor="@color/B8B8B8"
+                android:textCursorDrawable="@drawable/edittext_color_cursor"
+                android:textSize="@dimen/fourteens"
+                />
+        </TableRow>
+
+        <include layout="@layout/view"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:paddingStart="@dimen/ten"
+                android:text="@string/maintenance"
+                />
+
+            <TextView
+                android:id="@+id/edit_maintenance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twentyfive"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|end"
+                android:paddingRight="@dimen/ten"
+                android:paddingEnd="@dimen/ten"
+                android:text="@string/Please_select"
+                android:textColor="@color/B8B8B8"
+                android:textCursorDrawable="@drawable/edittext_color_cursor"
+                android:textSize="@dimen/fourteens"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/ten"
+                android:layout_height="@dimen/fourteens"
+                android:src="@drawable/arrow"
+                />
+        </TableRow>
+
+        <include layout="@layout/view"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:paddingStart="@dimen/ten"
+                android:text="@string/maintenance_person"
+                />
+
+            <EditText
+                android:id="@+id/edit_maintenance_person"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twentyfive"
+
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="end"
+                android:paddingRight="@dimen/twenty"
+                android:paddingEnd="@dimen/twenty"
+                android:textColor="@color/B8B8B8"
+                android:textCursorDrawable="@drawable/edittext_color_cursor"
+                android:textSize="@dimen/fourteens"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

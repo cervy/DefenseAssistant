@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="fortythree">43dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="hundred">100dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="ninety">90dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="thirty">30dp</dimen>
+    <dimen name="eighty">80dp</dimen>
+<!--    <dimen name="fiftyfour">54dp</dimen>     <dimen name="ninetytwo">92dp</dimen>
+
+-->
+
+    <dimen name="thirtytwos">32sp</dimen>
+    <dimen name="fourteens">14sp</dimen>
+    <dimen name="twelves">12sp</dimen>
+    <dimen name="sixteens">16sp</dimen>
+    <dimen name="eighteens">18sp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="threehundredtwenty">320dp</dimen>
+    <dimen name="sixty">60dp</dimen>
+    <dimen name="onep">1px</dimen>
+    <dimen name="sixtyfive">65dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="sixp">6dip</dimen>
+    <dimen name="hundredtwenty">120dp</dimen>
+    <dimen name="twohundred">200dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="thirteen">13dp</dimen>
+    <dimen name="thirtyfive">35dp</dimen>
+    <dimen name="seventy">70dp</dimen>
+    <dimen name="twentyfours">24sp</dimen>
+    <dimen name="thirtysixs">36sp</dimen>
+    <dimen name="twentyfive">25dp</dimen>
+    <dimen name="thirtys">30sp</dimen>
+    <dimen name="hundredforty">140dp</dimen>
+    <dimen name="tenp">10dip</dimen>
+    <dimen name="tens">10sp</dimen>
+
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/scanning_check"> 
+    </item>
+            
+    <item android:state_checked="false" android:drawable="@null">  
+      <shape>
+            <solid android:color="#FFFFFF"/>
+            <stroke android:width="0.5dp" android:color="#DDDDDD" />
+            <corners 
+               android:topLeftRadius="3dp"
+               android:topRightRadius="3dp"
+               android:bottomRightRadius="3dp"
+                android:bottomLeftRadius="3dp" />
+            <padding android:left="5dp" android:top="5dp"
+                android:bottom="5dp" android:right="5dp" />
+        </shape>
+    </item>
+  
+     
+   
+</selector>

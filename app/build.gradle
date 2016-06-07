@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+
+def gitVersion() {
+    if (!System.getenv('CI_BUILD')) {
+        // don't care
+        return 1
+    }
+    def cmd = 'git rev-list HEAD --first-parent --count'
+    cmd.execute().text.trim().toInteger()
+}
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//def keyStore = file('../e.jks')
+def keyStore = file(properties.getProperty("STORE_FILE"))
+
+
+
+android {
+    //useLibrary 'org.apache.http.legacy'
+    dexOptions {
+        preDexLibraries true
+        javaMaxHeapSize "3g"
+        incremental true
+        dexInProcess = true
+    }
+    packagingOptions {
+        exclude 'proguard-project.txt'
+        exclude 'project.properties'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    signingConfigs {
+        key {
+
+//进入keystore文件所在的目录  keytool -list  -v -keystore xxxx.keystore -storepass xxxxxxxxxx（密码）
+
+            storeFile file(properties.getProperty("STORE_FILE"))
+            storePassword properties.getProperty("STORE_PASSWORD")
+            keyAlias properties.getProperty("KEY_ALIAS")
+            keyPassword properties.getProperty("KEY_PASSWORD")
+        }
+
+    }
+    compileSdkVersion 19
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.szzaq.jointdefence"
+        resConfigs "zh"
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 8
+        versionName "1.06"
+
+    }
+    buildTypes {
+        debug {
+            if (keyStore.exists())
+                signingConfig signingConfigs.key
+        }
+        release {
+            if (keyStore.exists()) {
+                signingConfig signingConfigs.key                  shrinkResources true
+
+                /*minifyEnabled true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'*/
+            }
+        }
+    }
+    productFlavors {
+        // for saving build time during debugging
+        lollipop {
+            minSdkVersion 21
+        }
+        gb {
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    lintOptions {
+        disable 'InvalidPackage', 'MissingTranslation', 'ExtraTranslation'
+    }
+
+}
+
+dependencies {
+    compile files('libs/android-support-v4.jar')
+    compile files('libs/easemobchat_2.1.9.jar')
+    compile files('libs/gson-2.1.jar')
+    compile files('libs/TencentLocationSDK_v4.5.8_r160216_1427.jar')
+    compile files('libs/TencentMapSDK_Raster_v1.1.2.15850.jar')
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/jpush-android-2.1.3.jar')
+/*
+
+        debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+        releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+*/
+
+    //compile 'com.android.support:appcompat-v7:23.4.0'
+}

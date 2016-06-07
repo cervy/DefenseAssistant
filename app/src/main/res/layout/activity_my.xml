@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/F5F5F5"
+              android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/DDDDDD"
+            />
+
+        <!-- <TableRow
+             android:id="@+id/my_sanxiao_t"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@android:color/white"
+             android:padding="@dimen/ten">
+
+             <ImageView
+                 android:layout_width="@dimen/thirty"
+                 android:layout_height="@dimen/thirty"
+                 android:layout_weight="0.01"
+                 android:src="@drawable/my_sanxiao"
+                 />
+
+             <TextView
+                 android:id="@+id/my_sanxiao"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/thirty"
+                 android:layout_weight="1"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="@dimen/ten"
+                 android:text="@string/my_sanxiao"
+                 />
+         </TableRow>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="#DDDDDD"
+             />
+
+         <TableRow
+             android:id="@+id/my_zhongdian_t"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#FFFFFF"
+             android:padding="@dimen/ten">
+
+             <ImageView
+                 android:layout_width="@dimen/thirty"
+                 android:layout_height="@dimen/thirty"
+                 android:layout_weight="0.01"
+                 android:src="@drawable/my_zhongdian"
+                 />
+
+             <TextView
+                 android:id="@+id/my_zhongdian"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/thirty"
+                 android:layout_weight="1"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="@dimen/ten"
+                 android:text="@string/my_zhongdian"
+                 />
+         </TableRow>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="#DDDDDD"
+             />-->
+
+        <!-- <TableRow
+             android:id="@+id/my_message_t"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#FFFFFF"
+             android:padding="@dimen/ten"
+             android:visibility="gone"
+             >
+
+             <ImageView
+                 android:layout_width="@dimen/thirty"
+                 android:layout_height="@dimen/thirty"
+                 android:layout_weight="0.01"
+                 android:src="@drawable/my_message"
+                 />
+
+             <TextView
+                 android:id="@+id/my_message"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/thirty"
+                 android:layout_weight="1"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="@dimen/ten"
+                 android:text="@string/my_message"
+                 />
+         </TableRow>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="#DDDDDD"
+             />-->
+        <!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:background="#DDDDDD"
+                    />
+
+                <TableRow
+
+                    android:id="@+id/my_set_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/ten">
+
+                    <ImageView
+                        android:layout_width="@dimen/thirty"
+                        android:layout_height="@dimen/thirty"
+                        android:layout_weight="0.01"
+                        android:src="@drawable/my_set"
+                        />
+
+                    <TextView
+                        android:id="@+id/my_set"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/thirty"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/ten"
+                        android:text="@string/my_set"
+                        />
+                </TableRow>
+
+               <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one"
+                    android:background="#DDDDDD"
+                    />-->
+
+        <TableRow
+
+            android:id="@+id/changePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/ten">
+
+            <ImageView
+                android:layout_width="@dimen/thirty"
+                android:layout_height="@dimen/thirty"
+                android:src="@drawable/lock"
+                />
+
+            <TextView
+                android:id="@+id/tvChangePwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:text="@string/my_change_pwd"
+                />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/DDDDDD"
+            />
+
+        <TableRow
+            android:id="@+id/my_help_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/ten">
+
+            <ImageView
+                android:layout_width="@dimen/thirty"
+                android:layout_height="@dimen/thirty"
+                android:src="@drawable/my_help"
+                />
+
+            <TextView
+                android:id="@+id/my_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:text="@string/my_help"
+                />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/DDDDDD"
+            />
+
+        <TableRow
+            android:id="@+id/trExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/ten">
+
+            <ImageView
+                android:layout_width="@dimen/thirty"
+                android:layout_height="@dimen/thirty"
+                android:src="@drawable/exit"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:text="@string/my_exit"
+                />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/DDDDDD"
+            />
+    </TableLayout>
+
+</LinearLayout>

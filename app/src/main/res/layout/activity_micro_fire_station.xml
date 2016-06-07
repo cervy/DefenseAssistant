@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/EB2A29"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:paddingRight="@dimen/ten"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:paddingRight="@dimen/five"
+            android:text="@string/microstationnear"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"/>
+
+        <TextView
+            android:id="@+id/info_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/five"
+            android:text="@string/Please_select"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="@dimen/one"
+            android:layout_height="@dimen/thirty"
+            android:layout_marginRight="@dimen/five"
+            android:background="@color/CB2525"/>
+
+        <ImageView
+            android:id="@+id/info_add"
+            android:layout_width="@dimen/thirtyfive"
+            android:layout_height="@dimen/thirtyfive"
+            android:paddingRight="@dimen/ten"
+            android:src="@drawable/info_add"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <com.tencent.tencentmap.mapsdk.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/LinearLayout1"
+        />
+
+</LinearLayout>

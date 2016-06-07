@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/EB2A29"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+
+            android:id="@+id/agent_back"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:paddingEnd="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            android:src="@drawable/left_arrow"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/hundred"
+            android:paddingStart="@dimen/hundred"
+            android:text="@string/agent_item_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/agent_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@null"/>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/thirtys"
+            android:visibility="invisible"/>
+
+        <com.szzaq.jointdefence.utils.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center"/>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:indeterminateDrawable="@drawable/animdraw2"
+        android:indeterminateDuration="1500"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:text="@string/load_date"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/twelves"
+        android:visibility="visible"/>
+
+    <include
+        android:id="@+id/noservice"
+        layout="@layout/no_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+</LinearLayout>

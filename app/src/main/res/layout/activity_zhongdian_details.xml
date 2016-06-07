@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/F5F5F5"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/EB2A29"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/zhongdian_details_back"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:paddingRight="@dimen/ten"
+            android:src="@drawable/left_arrow"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/eighty"
+            android:text="@string/zhongdian_details_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"
+            />
+    </LinearLayout>
+
+    <!-- <ListView
+         android:id="@+id/Zhongdian_details_listview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     </ListView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/fifty"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="1"
+            android:text="@string/unitname"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/fifty"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="1"
+            android:text="@string/zerenren"/>
+
+        <TextView
+            android:id="@+id/zerenren"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/call_phone"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/fifty"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="1"
+            android:text="@string/guanliren"/>
+
+        <TextView
+            android:id="@+id/guanliren"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/call_phone"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/fifty"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="1"
+            android:text="@string/guanxiadanwei"/>
+
+        <TextView
+            android:id="@+id/guanxiadanwei"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/fifty"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="1"
+            android:text="@string/jianduyuan"/>
+
+        <TextView
+            android:id="@+id/jianduyuan"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:drawableRight="@drawable/call_phone"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/fifty"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            android:text="@string/xieguanyuan"
+            />
+
+        <TextView
+            android:id="@+id/xieguanyuan"
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/call_phone"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/fourteens"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zhongdian_details_equipmentlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:layout_marginTop="@dimen/twenty"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/ten"
+        android:text="@string/zhongdian_details_equipmentlist"
+        android:textSize="@dimen/fourteens"
+
+        />
+</LinearLayout>

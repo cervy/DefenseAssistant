@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="5dp"
+    android:background="@drawable/activity_equipment_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/equipment_name" />
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+             android:layout_weight="1"
+             android:gravity="center|start"
+           
+            android:id="@+id/equipment_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </TableRow>
+    <TableRow
+        android:padding="@dimen/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/equipment_number" />
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+             android:layout_weight="1"
+             android:gravity="center|start"
+            android:id="@+id/equipment_number"
+             
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextViewsdf" />
+
+    </TableRow>
+    <TableRow
+        android:padding="@dimen/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/equipment_location" />
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+             android:layout_weight="1"
+             android:gravity="center|start"
+            android:id="@+id/equipment_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TxtView" />
+
+    </TableRow>
+    <TableRow
+        android:padding="@dimen/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maintenance" />
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+             android:layout_weight="1"
+             android:gravity="center|start"
+            android:id="@+id/maintenance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TexView" />
+
+    </TableRow>
+    <TableRow
+        android:padding="@dimen/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maintenance_person" />
+
+        <TextView
+            android:textSize="@dimen/fourteens"
+             android:layout_weight="1"
+             android:gravity="center|start"
+            android:id="@+id/maintenance_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Textsadfsdfew" />
+
+    </TableRow>
+    <include layout="@layout/view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/eight" >
+
+ 	<Button
+ 	    android:id="@+id/equipment_edit"
+ 	    android:layout_width="@dimen/seventy"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentRight="true"
+ 	    android:layout_alignParentEnd="true"
+ 	    android:layout_marginRight="@dimen/eighty"
+ 	    android:layout_marginEnd="@dimen/eighty"
+ 	    android:background="@drawable/activity_list_button"
+ 	    android:text="@string/edit" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/seventy"
+            android:layout_height="wrap_content"
+            android:background="@drawable/activity_list_button"
+            android:text="@string/delete" />
+
+       
+
+    </RelativeLayout>
+
+</LinearLayout>

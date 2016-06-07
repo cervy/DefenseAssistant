@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/ten">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/ten"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcornerwhite"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/five"
+        android:paddingLeft="@dimen/five"
+        android:paddingRight="@dimen/five"
+        android:paddingStart="@dimen/five"
+        android:paddingTop="@dimen/five">
+
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <LinearLayout
+            android:id="@+id/linearlayoutofattachments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/msg"
+                android:layout_alignStart="@+id/msg"
+                android:layout_below="@+id/msg"
+                android:layout_marginTop="@dimen/ten"
+                android:text="     附件:"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:id="@+id/imgattachment"
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/eighty"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/imgattachment1"
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/eighty"
+                    android:layout_marginEnd="@dimen/ten"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_marginStart="@dimen/ten"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgattachment2"
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/eighty"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <CheckBox
+                android:id="@+id/foldor"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/fold"/>
+
+            <View
+                android:layout_width="@dimen/one"
+                android:layout_height="@dimen/fifty"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/receiveor"
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+
+
+                android:text="@string/receive"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

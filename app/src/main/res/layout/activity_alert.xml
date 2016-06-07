@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/transparent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/jingqingsudi"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/recoedstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/sixtyfive"
+            android:text="@string/recording"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/twelves"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/listViewAlert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:transcriptMode="alwaysScroll"/>
+
+        <ImageView
+            android:id="@+id/mic_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/record_animate_01"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnRecordVoice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty"
+            android:layout_marginLeft="@dimen/one"
+            android:layout_marginStart="@dimen/one"
+            android:background="@drawable/button_send_default"
+            android:gravity="center"
+            android:text="@string/pressspeak"/>
+    </LinearLayout>
+
+</LinearLayout>

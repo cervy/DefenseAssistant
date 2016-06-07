@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:text="日期"/>
+
+            <Button
+                android:id="@+id/checkdate"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="right|center_vertical"
+                android:padding="@dimen/five"
+                android:paddingLeft="@dimen/twenty"
+                android:paddingRight="@dimen/ten"
+                android:textCursorDrawable="@drawable/edittext_color_cursor"
+                android:textSize="@dimen/fourteens"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:text="@string/checkerr"/>
+
+            <EditText
+                android:id="@+id/checkerr"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|start"
+                android:padding="@dimen/five"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:text="@string/checktimes"/>
+
+            <EditText
+                android:id="@+id/checktimes"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|start"
+                android:inputType="number"
+                android:padding="@dimen/five"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:text="@string/profile"/>
+
+            <EditText
+                android:id="@+id/profile"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|start"
+                android:padding="@dimen/five"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:text="@string/remark"/>
+
+            <EditText
+                android:id="@+id/remark"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|start"
+                android:padding="@dimen/five"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:text="@string/checkerrr"/>
+
+            <EditText
+                android:id="@+id/checker"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|start"
+                android:padding="@dimen/five"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/thirty"
+                android:layout_marginRight="@dimen/thirty"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:text="@string/manager"/>
+
+            <EditText
+                android:id="@+id/manager"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical|start"
+                android:padding="@dimen/five"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/view"/>
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="@dimen/twohundred"
+            android:layout_height="@dimen/fifty"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/twenty"
+            android:background="@drawable/roundcornerorange"
+            android:gravity="center"
+            android:text="@string/save_data"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteens"/>
+    </LinearLayout>
+
+</ScrollView>
